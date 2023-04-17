@@ -1,0 +1,92 @@
+body {
+    background-image: url('Background.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.overlay {
+    position: absolute;
+    top: 144px;
+    left: 355px;
+    width: 623px;
+    height: 523px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(38px);
+    -webkit-backdrop-filter: blur(38px);
+    border-radius: 30px;
+}
+input[type="text"], input[type="password"], input[type="checkbox"], label[for="remember-me-checkbox"], button[type="submit"] {
+    width: 419px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: rgba(217, 217, 217, 0.08);
+    color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border: none;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+    color: rgba(255, 255, 255, 0.7);
+}
+#username {
+    position: absolute;
+    left: 102px;
+    top: 194px;
+}
+#password {
+    position: absolute;
+    left: 102px;
+    top: 300px;
+}
+.remember-me {
+    position: absolute;
+    left: 102px;
+    top: 390px;
+    display: flex;
+    align-items: center;
+}
+#remember {
+    color: white;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    top: 300px;
+}
+label[for="remember"] {
+    color: rgba(255, 255, 255, 0.7);
+  }
+label[for="remember-me-checkbox"] {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.6);
+}
+label[for="remember-me-checkbox"]:hover {
+    cursor: pointer;
+}
+label[for="remember-me-checkbox"]::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    margin-right: 8px;
+    background-color: rgba(0, 0, 255, 0.2);
+    transition: background-color 0.3s ease-in-out;
+}
+input[type="checkbox"]:checked + label[for="remember-me-checkbox"]::before {
+    background-color: #007BFF;
+}
+#signin {
+    position: absolute;
+    left: 102px;
+    top: 430px;
+    background-color: #007BFF;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+#signin-btn:hover {
+    background-color: #007BFF;
+    cursor: pointer;
+}

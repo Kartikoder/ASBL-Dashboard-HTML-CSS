@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Login.css">
+    <title>Page Title</title>
+    
+</head>
+<body>
+    <div class="overlay">
+        <input type="text" id="username" name="username" placeholder="Username">
+        <input type="password" id="password" name="password" placeholder="Password">
+        <div class="remember-me">
+            <input type="checkbox" id="remember" name="remember">
+            <label for="remember">Remember me</label>
+        </div>
+        <button type="submit" id="signin">Sign In</button>
+
+    </div>
+    <script>
+        const signInBtn = document.getElementById("signin");
+        const usernameInput = document.getElementById("username");
+        const passwordInput = document.getElementById("password");
+
+        signInBtn.addEventListener("click", () => {
+            const username = usernameInput.value;
+            const password = passwordInput.value;
+
+            if (username === "admin" && password === "asblindia") {
+                alert("Login successful!");
+            } else {
+                alert("Invalid username or password. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>
